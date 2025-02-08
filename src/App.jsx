@@ -6,7 +6,6 @@ import Homepage from './pages/homepage'
 import Navbar from './components/navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className=''>
