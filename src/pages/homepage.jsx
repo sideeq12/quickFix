@@ -8,20 +8,20 @@ import Footer from '../components/footer'
 
 const Homepage = () => {
   return (
-    <>
+    <div className=''>
         <Hero />
         <div className='relative flex w-screen justify-center gap-32 items-center bg-white h-96'>
-            <div className='flex flex-col items-center space-y-2'>
-                <h2 className='font-bold text-5xl'>5k</h2>
+            <div className='flex flex-col items-center space-y-1 md:space-y-2'>
+                <h2 className='font-bold text-2xl md:text-5xl '>5k</h2>
                 <span>Happy clients</span>
             </div> <div className='flex flex-col items-center space-y-2'>
-                <h2 className='font-bold text-5xl'> 7k</h2>
+                <h2 className='font-bold text-2xl md:text-5xl'> 7k</h2>
                 <span>Donations</span>
             </div> <div className='flex flex-col items-center space-y-2'>
-                <h2 className='font-bold text-5xl'>10k</h2>
+                <h2 className='font-bold text-2xl md:text-5xl'>10k</h2>
                 <span> Users</span>
             </div> <div className='flex flex-col items-center space-y-2'>
-                <h2 className='font-bold text-5xl'>6000+</h2>
+                <h2 className='font-bold text-2xl md:text-5xl'>6000+</h2>
                 <span>Customers</span>
             </div>
             
@@ -39,7 +39,7 @@ const Homepage = () => {
             <Steps />
             <Newsletter />
             <Footer />
-            </>
+            </div>
   )
 }
 

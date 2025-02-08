@@ -1,7 +1,8 @@
 import React from 'react'
 
 const Hero = () => {
-  return (    <div className=' h-screen relative flex flex-col items-center px-20   w-screen justify-center  bg-[url(/bg.png)] bg-cover bg-center'>
+  return (    <div className=' h-screen relative flex flex-col
+   items-center md:px-20   w-screen justify-center  bg-[url(/bg.png)] bg-cover bg-center'>
     <div className='flex '>
     <div className='w-1/2 text-left space-y-6'>
          <h1 className='font-semibold text-5xl'>
