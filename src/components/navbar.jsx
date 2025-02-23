@@ -17,7 +17,7 @@ const Navbar = () => {
         </li>
         
         <li>
-        <a className='text-black hover:text-red-400 '  href="/contact">Blog</a>
+        <a className='text-black hover:text-red-400 '  href="/blog">Blog</a>
         </li>
     </ul>
     <button className='py-2 px-4 bg-red-500 text-sm text-white rounded-md'>
