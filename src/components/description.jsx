@@ -8,9 +8,9 @@ import CurvedLine from './curvedline';
 const Description = () => {
   return (
     <div className='py-4 relative'>
-      <CurvedLine />
-       <div className='flex gap-2 px-20 relative  justify-between items-center mx-auto'>
-       <div className='text-left w-1/3'>
+      {/* <CurvedLine /> */}
+       <div className='grid grid-cols-1 md:grid-cols-2 gap-2 w-5/6  relative  justify-between items-center mx-auto'>
+       <div className='text-left '>
            <div className='flex gap-2 items-center'>
                 <div className='h-10 w-10 rounded-full bg-red-400 flex items-center justify-center'>
                   <BsEmojiSmile className='text-white'  size={20} />
@@ -26,16 +26,16 @@ const Description = () => {
                   we connect those in urgent
                  need of blood with willing donors nearby, saving precious time and lives in emergency situations</p>
         </div>
-    <img src="/ph.png" alt="tst"  className='w-1/2'/>
+    <img src="/ph.png" alt="tst"  className=''/>
     
-    <img src="/clip.png" alt="tst"  className='absolute -z-10 -right-10 h-[30rem]'/>
+    {/* <img src="/clip.png" alt="tst"  className='absolute -z-10 -right-10 h-[30rem]'/> */}
        </div>
     
-       <div className='flex gap-10  px-20   justify-between items-center mx-auto' >
+       <div className='grid grid-cols-1  md:grid-cols-2 gap-10  w-5/6  items-center mx-auto' >
         
        <img src="/clip4.png" alt="tst"  className='absolute -z-10 -left-10 h-[30rem]'/>
-       <img src="/mock.png" alt="tst"  className='w-1/2'/>
-       <div className='text-left w-1/3'>
+       <img src="/mock.png" alt="tst"  className=''/>
+       <div className='text-left'>
        <div className='flex gap-2 items-center '>
                 <div className='h-10 w-10 rounded-full bg-red-400 flex items-center justify-center'>
                   <BsDroplet className='text-white'  size={20} />
@@ -63,8 +63,8 @@ const Description = () => {
        </div>
        </div>
 
-       <div className='flex gap-2 px-20  justify-between items-center mx-auto relative'>
-       <div className='text-left w-1/3'>
+       <div className='grid grid-cols-1 md:grid-cols-2 mt-10 w-5/6  justify-between items-center mx-auto relative'>
+       <div className='text-left'>
            <div className='flex gap-2 items-center'>
                 <div className='h-10 w-10 rounded-full bg-red-400 flex items-center justify-center'>
                   <BsEmojiSmile className='text-white'  size={20} />
@@ -78,8 +78,7 @@ const Description = () => {
             <p className='mt-4'> Our mission is simple – to save lives by making the process of finding and donating blood seamless, quick, and
                  secure. We believe that no one should struggle to find blood in times of need</p>
         </div>
-        <img src="/heart.png" alt="tst"  className='w-1/2'/>
-        <img src="/clip.png" alt="tst"  className='absolute -z-10 -right-10 h-[30rem]'/>
+        <img src="/heart.png" alt="tst"  className=''/>
        </div>
     </div>
   )

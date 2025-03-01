@@ -8,6 +8,10 @@ import About from './pages/aboutUs'
 import Navbar from './components/navbar'
 import Footer from './components/footer';
 import Blog from './pages/Blog';
+import Terms from './pages/terms';
+import Privacy from './pages/privacy';
+import FAQ from './pages/faq';
+import Contact from './pages/contact';
 
 function App() {
 
@@ -17,7 +21,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />  
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

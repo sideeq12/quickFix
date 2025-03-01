@@ -6,10 +6,10 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const Hero = () => {
   return (    <div className=' h-screen relative flex flex-col
-   items-center md:px-20   w-screen justify-center  bg-[url(/home.svg)] bg-cover bg-center'>
+   items-center md:px-20   w-screen md:justify-center  bg-[url(/home.svg)] bg-cover bg-center'>
     <div className='flex '>
-    <div className='w-1/2 text-left space-y-6'>
-         <h1 className='font-semibold text-5xl'>
+    <div className='lg:w-1/2 text-left space-y-10 lg:space-y-6 mt-24 lg:mt-0 mx-10 lg:mx-0'>
+         <h1 className='font-semibold text-5xl '>
          Experience becoming a <span className='text-red-500'>hero today</span>, Donate blood and 
          save lives.
          </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
 
      </div> */}
     </div>
-    <img src="/eclip.png" className='absolute top-0 left-0 -z-10' alt="" />
+    <img src="/eclip.png" className='absolute top-0 left-12 -z-10' alt="" />
  </div>
   )
 }

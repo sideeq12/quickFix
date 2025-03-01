@@ -44,7 +44,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  padding-bottom: 5em;
+  max-width: 100VW;
+  overflow-x: hidden;
+  /* padding-bottom: 5em; */
 }
 
 h1 {

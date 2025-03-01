@@ -10,7 +10,7 @@ const Newsletter = () => {
              updated on blood donation drives, urgent requests, 
              and how you can help save lives."</p>
              <div className='flex  mx-auto mt-5 gap-2 border'>
-                   <div className='bg-white px-4 py-2 rounded-md w-80 flex items-center justify-start'>
+                   <div className='bg-white px-4 py-2 rounded-md w-2/3 mx-auto flex items-center justify-start'>
                    <input type="email" placeholder='Enter your email address' className='focus:outline-none'/>
 
                    </div><button className='bg-[#FF3131] text-white px-4 py-2 rounded-md'>Subscribe</button>
