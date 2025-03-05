@@ -51,7 +51,8 @@ const faqData = [
                 <div key={index} className={`border-gray-300 ${openIndex === index ? 'bg-[#F3BF99]' : ''}`}>
 
                     <div
-                        className="w-full bg-[#FDDDDD] border-b cursor-pointer  border-black text-left p-4 flex justify-between items-center transition"
+                        className="w-full bg-[#FDDDDD] border-b cursor-pointer 
+                        gap-2 border-black text-left p-4 flex justify-between items-center transition"
                         onClick={() => toggleFAQ(index)}
                     >
                         <span className="font-medium">{faq.question}</span>
