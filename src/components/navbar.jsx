@@ -45,13 +45,13 @@ const Navbar = () => {
             {isDropdownOpen && (
               <ul className="absolute left-0 mt-2 w-40 bg-white shadow-md rounded-md z-50">
                 <li className="px-4 py-2 hover:bg-gray-100">
-                  <a href="/highlight-1">Highlight 1</a>
+                  <a href="/contact">Contact Us </a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-100">
-                  <a href="/highlight-2">Highlight 2</a>
+                  <a href="/terms">Terms & Condition </a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-100">
-                  <a href="/highlight-3">Highlight 3</a>
+                  <a href="/privacy"> Privacy</a>
                 </li>
               </ul>
             )}
@@ -95,13 +95,13 @@ const Navbar = () => {
             {isDropdownOpen && (
               <ul className="bg-gray-100 mt-2">
                 <li className="px-4 py-2 hover:bg-gray-200">
-                  <a href="/highlight-1">Highlight 1</a>
+                  <a href="/contact"> Contact Us</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200">
-                  <a href="/highlight-2">Highlight 2</a>
+                  <a href="/terms">Terms & Conditions 2</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-200">
-                  <a href="/highlight-3">Highlight 3</a>
+                  <a href="/privacy"> Privacy</a>
                 </li>
               </ul>
             )}
