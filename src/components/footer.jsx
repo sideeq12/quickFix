@@ -8,9 +8,11 @@ import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <footer className=" py-6 text-left bg-black text-white">
-      <div className="container border-b py-10 mx-auto w-5/6 gap-8 grid grid-cols-2 lg:grid-cols-4 justify-between ">
-        <div className=' text-left'>
+    <footer className=" py-6 text-left bg-
+     text-white">
+      <div className="container border-b py-10 mx-auto w-5/6 
+      gap-8 grid grid-cols-3 lg:grid-cols-4 justify-between ">
+        <div className=' text-left col-span-2'>
          <img src="/logo.png" className='h-12' alt="" />
           <p className="text-sm mt-2">    BloodHero is dedicated to connecting blood donors with recipients in need. Our platform ensures that those in urgent need of blood can find donors quickly and efficiently. Join us in saving lives and making a difference in your community.
           </p>
@@ -24,7 +26,7 @@ const Footer = () => {
             <li>Visit Us</li>
           </ul>
         </div>
-        <div className=''>
+        <div className='col-span-2'>
           <h5 className="font-bold text-lg mb-3">Contact us</h5>
           <p className='text-sm'>     Have questions or need assistance? Reach out via email or phone. Our support team is here to help with any inquiries or issues you may have.
           </p>
