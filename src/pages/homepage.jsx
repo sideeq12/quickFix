@@ -16,7 +16,8 @@ const Homepage = () => {
   return (
     <div className=''>
         <Hero />
-        <div className='relative grid my-10 lg:my-20 justify-center  w-5/6 grid-cols-2 lg:grid-cols-4 mx-auto  text-center 
+        <div className='relative grid my-10 lg:my-20 
+        justify-center  w-5/6 grid-cols-2 lg:grid-cols-4 ml-8 md:mx-auto   text-center 
          bg-white h-96'>
             <div className='text-center  col-span-1 h-fit  space-y-2 w-1/4 lg:w-fit md:space-y-2'>
                 <h2 className='font-bold text-xl md:text-5xl '>5k</h2>
@@ -32,7 +33,7 @@ const Homepage = () => {
                 <span>Customers</span>
             </div>
             
-     <img src="/vector.png" className='absolute -top-80 h-[30rem] left-0 z-10' alt="" />
+     <img src="/vector.png" className='absolute -top-80 h-[30rem] -left-24 z-10' alt="" />
             </div>
             <div className='py-4 w-5/6 mx-auto grid grid-cols-1 md:grid-cols-2 text-left lg:space-x-10 align-middle'>
             <iframe
