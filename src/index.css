@@ -47,6 +47,7 @@ body {
   max-width: 100VW;
   overflow-x: hidden;
   color: black;
+  background-color: white;
   /* padding-bottom: 5em; */
 }
 
