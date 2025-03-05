@@ -6,7 +6,7 @@ const Freq = () => {
     <div>
         <h3 className='text-3xl font-semibold'>Frequently asked questions</h3>
 
-        <div className='w-5/6 mx-auto text-left my-10 bg-[#FDDDDD] grid lg:grid-cols-2 gap-6  rounded-lg p-8'>
+        <div className='w-5/6 mx-auto text-left my-10 bg-[#FDDDDD] grid lg:grid-cols-2 gap-6  rounded-lg p-4 md:p-8'>
             <FAQAccordion />
             <div className='bg-[url(/fix.png)] bg-center bg-cover h-72 lg:h-5/6 mt-6'></div>
 
@@ -46,7 +46,7 @@ const faqData = [
         setOpenIndex(openIndex === index ? null : index); // Toggle open/close
     };
     return (
-        <div className=" grid  gap-12  mx-auto text-left col-span-1  rounded-lg p-4">
+        <div className=" grid  gap-12  mx-auto text-left col-span-1 text-sm md:text-lg  rounded-lg p-4">
             {faqData.map((faq, index) => (
                 <div key={index} className={`border-gray-300 ${openIndex === index ? 'bg-[#F3BF99]' : ''}`}>
 
