@@ -14,7 +14,8 @@ const Events = () => {
                   grid lg:grid-cols-2 border-gray-200 rounded-lg relative w-72  lg:min-w-[35rem] lg:h-72 text-white 
           bg-white "  key={index}>
        
-                 <div src="" className='col-span-1 m-4   bg-[url(/abut.svg)] bg-center bg-cover h-60' alt=""></div>
+                 <div src="" className='w-3/4  lg:col-span-1 m-4   
+                 bg-[url(/abut.svg)] bg-center bg-cover h-60' alt=""></div>
                   <div className="  rounded-lg col-span-1 p-4 ">
          
             <div className="text-red-500  flex
