@@ -13,12 +13,12 @@ const Footer = () => {
       <div className="container border-b py-10 mx-auto w-5/6 
       gap-8 grid grid-cols-3 lg:grid-cols-4 justify-between ">
         <div className=' text-left col-span-2'>
-         <img src="/footerLogo.png" className='h-12' alt="" />
+         <img src="/footerLogo.png" className='h-16' alt="" />
           <p className="text-sm mt-2">    BloodHero is dedicated to connecting blood donors with recipients in need. Our platform ensures that those in urgent need of blood can find donors quickly and efficiently. Join us in saving lives and making a difference in your community.
           </p>
         </div>
         <div>
-          <h5 className="font-bold text-lg mb-3">About us</h5>
+          <h5 className="font-bold text-lg mb-3 mt-4">About us</h5>
           <ul>
             <li>Portfolio
             </li>
