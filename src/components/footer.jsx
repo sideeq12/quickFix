@@ -8,7 +8,7 @@ import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <footer className=" py-6 text-left bg-
+    <footer className=" py-6 text-left bg-black
      text-white">
       <div className="container border-b py-10 mx-auto w-5/6 
       gap-8 grid grid-cols-3 lg:grid-cols-4 justify-between ">
