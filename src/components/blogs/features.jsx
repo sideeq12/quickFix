@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FcNext , FcPrevious} from "react-icons/fc";
+
 
 const Features = () => {
   const data = Array(20).fill({ 
@@ -48,20 +50,21 @@ const Features = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-6 space-x-4">
-        <button 
+      <div className="flex justify-center mt-10 space-x-4">
+        <FcPrevious 
           onClick={handlePrev} 
           disabled={currentPage === 1} 
-          className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50">
-          Prev
-        </button>
-        <span className="px-4 py-2">Page {currentPage} of {totalPages}</span>
-        <button 
+          className=""
+          size={20}
+        
+        />
+        <span className="px-4 ">Page {currentPage} of {totalPages}</span>
+        <FcNext 
           onClick={handleNext} 
+          size={20}
           disabled={currentPage === totalPages} 
-          className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50">
-          Next
-        </button>
+          className=""
+        />
       </div>
     </div>
   );
