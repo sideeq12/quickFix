@@ -28,11 +28,11 @@ const Features = () => {
   );
 
   return (
-    <div className="w-5/6 mx-auto my-12">
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-12">
+    <div className="w-full p-3 lg:w-5/6 mx-auto my-12">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-12">
         {displayedData.map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-lg">
-            <img src={item.imgSrc} className="rounded-lg h-60 w-full" alt="Thumbnail" />
+            <img src={item.imgSrc} className="rounded-lg h-40 lg:h-60 w-full" alt="Thumbnail" />
             <div className="p-2 text-left">
               <h3 className="text-sm text-left font-semibold mt-3">{item.title}</h3>
               <div className="flex gap-2 text-xs my-1 align-bottom justify-between">
