@@ -16,8 +16,8 @@ const Privacy = () => {
   return (
     <div>
         <Jumbotron title='Highlight' subheader={['Privacy Policy']} />
-        <div className='flex w-5/6 mx-auto py-20 text-left align-middle justify-around'>
-        <div className='w-1/2 leading-[40px]'>
+        <div className='flex flex-col lg:flex-row w-5/6 mx-auto py-20 text-left align-middle justify-around'>
+        <div className='lg:w-1/2 leading-[40px]'>
         <h3 className='text-2xl font-semibold'>Privacy Policy</h3>
         At Blood Hero, we value and respect your privacy.
          This Privacy Policy explains in detail how we collect, use, store, and protect your information,
@@ -26,7 +26,7 @@ const Privacy = () => {
             By accessing or using our application, 
         you agree to the terms outlined in this Privacy Policy.
         </div>
-        <div className="h-80 bg-cover bg-center w-1/3 bg-red-400 rounded-lg bg-[url(/abut.svg)]"></div>
+        <div className="h-80 bg-cover bg-center lg:w-1/3 bg-red-400 rounded-lg bg-[url(/abut.svg)]"></div>
       </div>
         <div className='flex gap-4 justify-center align-middle mt-10 mx-auto w-5/6'>
             <span className='font-semibold text-xl'>Information We Collect</span>
