@@ -30,7 +30,7 @@ const Features = () => {
   );
 
   return (
-    <div className="w-full p-3 lg:w-5/6 mx-auto my-12">
+    <div className="w-full p-3 lg:w-5/6 mx-auto my-4">
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-12">
         {displayedData.map((item, index) => (
           <div key={index} className="border border-gray-200 rounded-lg">
