@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GrNext, GrPrevious } from "react-icons/gr";
+import { useRoutes } from 'react-router-dom';
 
 const EventList = () => {
   const events = Array.from({ length: 16 }); // Example: 12 events
@@ -14,7 +15,7 @@ const EventList = () => {
 
   return (
     <div>
-      <div className='md:w-5/6 mx-auto my-6 flex flex-col md:flex gap-6 justify-between px-4 '>
+      <div className='md:w-5/6 mx-auto my-6 flex flex-col md:flex-row gap-6 justify-between px-4 '>
         <div className='text-3xl font-semibold'>Upcoming Events</div>
         <div className='gap-4 flex text-sm'>
           <span className='px-6 rounded-md py-2 h-fit bg-gray-200'>All days</span>
@@ -24,7 +25,7 @@ const EventList = () => {
       </div>
       <div className='w-full px-10 lg:px-2 md:w-3/4 mx-auto mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {currentEvents.map((_, index) => (
-          <div key={index} className="text-left cursor-pointer hover:bg-orange-200 rounded-md border">
+          <a href='/event'  key={index} className="text-left  text-black hover:text-black cursor-pointer hover:bg-orange-200 rounded-md border">
             <div className='bg-[url(/fixed.png)] h-32 md:h-60 col-span-1 bg-cover bg-center'></div>
             <div className='p-2 flex gap-4'>
               <div className='w-20'>
@@ -36,7 +37,7 @@ const EventList = () => {
                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur. Neque a a diam consequat masectetur.</p>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
       <div className='flex justify-center my-6 gap-4'>
