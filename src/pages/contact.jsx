@@ -34,10 +34,10 @@ const Contact = () => {
             <FaLinkedinIn  size={30}/>
                 </div>
             </div>
-            <div className='flex gap-2 border-r py-4  border-l text-center align-middle lg:justify-center'>
+            <div className='flex gap-2 border-r py-4  lg:border-l text-center align-middle lg:justify-center'>
                 <MdWifiCalling2 size={30} />
                 <span>+968 7887 8320</span>
-            </div>  <div className='flex border-l gap-2 lg:px-4 py-4'>
+            </div>  <div className='flex lg:border-l gap-2 lg:px-4 py-4'>
                 <MdLocationPin size={30} />
                 <span>Blood Hero HQ, 123 Life Avenue, Hope City, USA
                 </span>
@@ -54,18 +54,18 @@ const Contact = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-5/6 lg:w-1/2 text-left mx-auto'>
                 <div className='col-span-2'>
                         <label htmlFor="First Name">First Name</label>
-                        <input type="text" name="" id="" className='h-12 rounded-md  w-full' />
+                        <input type="text" name="" id="" className='h-12 rounded-md bg-white w-full' />
                     </div>
                          <div className='col-span-1'>
                         <label htmlFor="First Name">Last Name</label>
-                        <input type="text" name="" id="" className='h-12 rounded-md w-full' />
+                        <input type="text" name="" id="" className='h-12 bg-white rounded-md w-full' />
                     </div>
                     <div className='col-span-2'>
                             <label htmlFor="Email Address">Email Address</label>
-                            <input type="text" name="" id="" className='h-12 w-full'/>
+                            <input type="text" name="" id="" className='bg-white h-12 w-full'/>
                     </div> <div className='col-span-2'>
                             <label htmlFor="Email Address">Message</label>
-                            <textarea  name="" id="" className='h-32 w-full'/>
+                            <textarea  name="" id="" className='h-32 w-full bg-white'/>
                     </div>
                     <button className='bg-red-500  text-white w-full'>Submit ticket</button>
                 </div>
