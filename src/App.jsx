@@ -12,6 +12,7 @@ import Terms from './pages/terms';
 import Privacy from './pages/privacy';
 import FAQ from './pages/faq';
 import Contact from './pages/contact';
+import Events from './pages/events';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
       <Footer />
     </Router>
