@@ -2,6 +2,8 @@ import React from 'react'
 import Jumbotron from '../components/jumbotron'
 import { IoSearchOutline } from 'react-icons/io5'
 import { CgLivePhoto } from "react-icons/cg";
+import EventLocation from './eventLocation';
+import JoinUs from '../components/joinUs';
 
 
 const Event = () => {
@@ -19,7 +21,7 @@ const Event = () => {
                     <div className='bg-black w-full h-full bg-opacity-40 text-white flex p-4 text-sm'>
                        Going live <CgLivePhoto  size={20} color='red'/>
                         </div></div>
-                        <div className='bg-[#F3BF99] grid grid-cols-4  p-4 w-2/3 md:w-[30rem] -mt-6 mx-auto h-20 rounded-md'>
+                        <div className='bg-[#F3BF99] grid grid-cols-4  p-4 w-11/12 text-xs lg:text-sm md:w-[30rem] -mt-6 mx-auto h-20 rounded-md'>
                         <div className='flex flex-col border-black font-semibold border-r'>
                             01 
                             <span>Day</span>
@@ -39,32 +41,57 @@ const Event = () => {
 
                         </div>
             {/* event details */}
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10'>
                     <div className='col-span-1 lg:col-span-2'>
 
                     <div className='p-6'>
-                        <h3 className='font-semibold text-3xl'>Event Details</h3>
+                        <h3 className='font-semibold text-3xl my-3'>Event Details</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                              Lorem Ipsum has been the industry's standard dummy text ever since the .</p>
                     </div>
+
+             <EventLocation />
                     </div>
 
-                    <div className='col-span-1 rounded-sm border text-left'>
-                        <div className='flex flex-col bg-[#F3BF99] rounded-md w-fit p-2 mb-6 text-center'>
+                   <div className='col-span-1'>
+                   <div className=' rounded-sm border text-left px-4 pt-4 pb-8 h-fit'>
+                        <div className='flex flex-col bg-[#F3BF99] rounded-md w-fit px-2 py-4 mb-6 text-center'>
                             20 
                             <span className='text-sm'>March</span>
                         </div>
 
-                        <div className='flex flex-col '>
-                        <span>Organised by : </span> 
-                        <span>Venue : </span> 
-                        <span>Phone : </span> 
-                        <span>Email : </span>
+                        <div className='flex flex-col leading-loose space-y-3 text-sm font-semibold  '>
+                        <span>Organised by : BloodHero </span> 
+                        <span>Venue : Google meet</span> 
+                        <span>Phone : +231992392 </span> 
+                        <span>Email : support@bloodhero.com </span>
                         </div>
 
                     </div>
+                    <div className='bg-[#F3BF99] grid grid-cols-4  p-4  w-11/12 text-xs lg:text-sm md:w-5/6 -mt-6 mx-auto h-20 rounded-md'>
+                        <div className='flex flex-col border-black  border-r'>
+                            01 
+                            <span>Day</span>
+                        </div>
+                        <div className='flex flex-col border-black  border-r'>
+                            35 
+                            <span>Hour</span>
+                        </div>
+                        <div className='flex flex-col border-black  border-r'>
+                            22 
+                            <span>Minutes</span>
+                        </div>
+                        <div className='flex flex-col '>
+                            49 
+                            <span>Seconds</span>
+                        </div>
+
+                        </div>
+                   </div>
                 </div>
                 </div>
+
+                <JoinUs />
 
     </div>
   )
