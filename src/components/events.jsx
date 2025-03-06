@@ -7,7 +7,7 @@ const Events = () => {
         <div className='text-left w-full max-w-screen-xl mx-auto my-10'>
             <h3 className='font-semibold text-3xl ml-4 lg:ml-8'>Explore other updates</h3>
 
-            <div className='flex space-x-4 overflow-x-auto scrollbar-hide p-5 mt-4 flex-wrap lg:flex-nowrap'>
+            <div className='flex space-x-4 overflow-x-auto scrollbar-hide p-5 mt-4 flex-nowrap'>
                 {[...Array(7)].map((_, index) => (
                     <div className="border cursor-pointer hover:bg-[#F6D9D9] 
                         grid lg:grid-cols-2 border-gray-200 rounded-lg relative min-w-[18rem] lg:min-w-[30rem] lg:h-72 text-white 
