@@ -23,8 +23,8 @@ const Navbar = () => {
         <img src="/art.jpg" alt="logo" className="h-14" />
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden border-gray-200">
-          <div onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <div className="md:hidden bg-white border-gray-200">
+          <div className="bg-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
               <AiOutlineClose size={24} />
             ) : (
