@@ -10,36 +10,38 @@ const Navbar = () => {
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.classList.add("overflow-hidden");
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.style.overflow = "unset";
     }
   }, [isMobileMenuOpen]);
 
   return (
-    <nav className="bg-white shadow-md font-mono">
-      <div className="flex justify-between border-b lg:border-b-0 items-center px-6 py-4 md:px-20">
+    <nav className="bg-white shadow-md font-mono fixed w-full top-0 z-50">
+      <div className="flex justify-between items-center px-4 sm:px-6 lg:px-20 py-3">
         {/* Logo */}
-        <img src="/art.jpg" alt="logo" className="h-14" />
+        <img src="/art.jpg" alt="logo" className="h-10 sm:h-14" />
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden bg-white border-gray-200">
-          <div className="bg-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            {isMobileMenuOpen ? (
-              <AiOutlineClose size={24} />
-            ) : (
-              <AiOutlineMenu size={24} />
-            )}
-          </div>
-        </div>
+        <button 
+          className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? (
+            <AiOutlineClose size={24} />
+          ) : (
+            <AiOutlineMenu size={24} />
+          )}
+        </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 items-center uppercase">
+        <ul className="hidden md:flex gap-6 lg:gap-8 items-center uppercase text-sm lg:text-base">
           <li>
-            <a className="text-black hover:text-red-400" href="/">Home</a>
+            <a className="text-black hover:text-red-400 transition-colors" href="/">Home</a>
           </li>
           <li>
-            <a className="text-black hover:text-red-400" href="/about">About Us</a>
+            <a className="text-black hover:text-red-400 transition-colors" href="/about">About Us</a>
           </li>
 
           {/* Dropdown Menu */}
@@ -48,18 +50,18 @@ const Navbar = () => {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <div className="text-black hover:text-red-400 flex items-center">
+            <div className="text-black hover:text-red-400 flex items-center transition-colors">
               Highlight <GoPlus className="ml-1" />
             </div>
             {isDropdownOpen && (
-              <ul className="absolute left-0 mt-2 w-40 bg-white shadow-md rounded-md z-50">
-                <li className="px-4 py-2 hover:bg-gray-100">
+              <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-50 py-2">
+                <li className="px-4 py-2 hover:bg-gray-100 transition-colors">
                   <a href="/Events">Events</a>
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-100">
+                <li className="px-4 py-2 hover:bg-gray-100 transition-colors">
                   <a href="/terms">Terms & Condition</a>
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-100">
+                <li className="px-4 py-2 hover:bg-gray-100 transition-colors">
                   <a href="/privacy">Privacy</a>
                 </li>
               </ul>
@@ -67,17 +69,17 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a className="text-black hover:text-red-400" href="/blog">Blog</a>
+            <a className="text-black hover:text-red-400 transition-colors" href="/blog">Blog</a>
           </li>
           <li>
-            <a className="text-black hover:text-red-400" href="/FAQ">FAQ</a>
+            <a className="text-black hover:text-red-400 transition-colors" href="/FAQ">FAQ</a>
           </li>
         </ul>
 
         {/* Right Section */}
         <div className="hidden md:flex items-center gap-4">
-          <Flag country={"NG"} className="w-12 h-8 rounded-md shadow-md" />
-          <a href="/contact" className="py-2 px-4 bg-red-500 text-sm text-white rounded-md">
+          <Flag country={"NG"} className="w-10 h-6 sm:w-12 sm:h-8 rounded-md shadow-md" />
+          <a href="/contact" className="py-2 px-4 bg-red-500 text-sm text-white rounded-md hover:bg-red-600 transition-colors">
             Contact Us
           </a>
         </div>
@@ -85,36 +87,40 @@ const Navbar = () => {
 
       {/* Mobile Full-Screen Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center justify-center space-y-6 text-center">
-          <button onClick={() => setIsMobileMenuOpen(false)} className="absolute top-6 right-6">
+        <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-8">
+          <button 
+            onClick={() => setIsMobileMenuOpen(false)} 
+            className="absolute top-6 right-6 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            aria-label="Close menu"
+          >
             <AiOutlineClose size={28} />
           </button>
 
           <ul className="space-y-6 text-lg">
             <li>
-              <a className="text-black hover:text-red-400" href="/">Home</a>
+              <a className="text-black hover:text-red-400 transition-colors" href="/">Home</a>
             </li>
             <li>
-              <a className="text-black hover:text-red-400" href="/about">About Us</a>
+              <a className="text-black hover:text-red-400 transition-colors" href="/about">About Us</a>
             </li>
 
             {/* Mobile Dropdown */}
             <li>
               <div
-                className="text-black hover:text-red-400 block cursor-pointer"
+                className="text-black hover:text-red-400 block cursor-pointer transition-colors"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
-                Highlight <GoPlus className="inline-block" />
+                Highlight <GoPlus className="inline-block ml-1" />
               </div>
               {isDropdownOpen && (
-                <ul className="bg-gray-100 mt-2">
-                  <li className="px-4 py-2 hover:bg-gray-200">
-                    <a href="/Events">Events </a>
+                <ul className="bg-gray-50 mt-2 rounded-lg overflow-hidden">
+                  <li className="px-4 py-2 hover:bg-gray-100 transition-colors">
+                    <a href="/Events">Events</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-200">
+                  <li className="px-4 py-2 hover:bg-gray-100 transition-colors">
                     <a href="/terms">Terms & Conditions</a>
                   </li>
-                  <li className="px-4 py-2 hover:bg-gray-200">
+                  <li className="px-4 py-2 hover:bg-gray-100 transition-colors">
                     <a href="/privacy">Privacy</a>
                   </li>
                 </ul>
@@ -122,13 +128,13 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a className="text-black hover:text-red-400" href="/blog">Blog</a>
+              <a className="text-black hover:text-red-400 transition-colors" href="/blog">Blog</a>
             </li>
             <li>
-              <a className="text-black hover:text-red-400" href="/FAQ">FAQ</a>
+              <a className="text-black hover:text-red-400 transition-colors" href="/FAQ">FAQ</a>
             </li>
             <li>
-              <a href="/contact" className="py-2 px-8 bg-red-500 text-white rounded-md">
+              <a href="/contact" className="py-2 px-8 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors">
                 Contact Us
               </a>
             </li>
