@@ -90,7 +90,7 @@ const Description = () => {
         <div className="w-full flex justify-center md:justify-end">
           <img src="/heart.png" alt="Heart illustration" className="w-full max-w-md lg:max-w-lg" />
         </div>
-        <img src='/heart.png' alt='tst' className='-mt-10 md:mt-0' />
+       
       </MotionDiv>
     </div>
   );
