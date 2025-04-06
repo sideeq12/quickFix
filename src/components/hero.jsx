@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='h-screen relative flex flex-col items-center md:px-20 w-screen md:justify-center bg-[url(/home.svg)] bg-cover bg-center'>
       <div className='flex'>
-        <div className='lg:w-1/2 text-left space-y-10 lg:space-y-6 mt-24 lg:mt-0 mx-10 lg:mx-0'>
+        <div className='lg:w-1/2 text-left space-y-10 lg:space-y-6 mt-16 lg:mt-0 mx-10 lg:mx-0'>
           <motion.h1 
             initial={{ y: -50, opacity: 0 }} 
             animate={{ y: 0, opacity: 1 }} 
