@@ -39,7 +39,7 @@ const Description = () => {
       </MotionDiv>
       
       <MotionDiv className='flex flex-col-reverse mt-4 md:grid md:grid-cols-2 gap-10 w-5/6 items-center mx-auto'>
-        <img src='/clip4.png' alt='tst' className='absolute -z-10 -left-10 h-[30rem]' />
+        {/* <img src='/clip4.png' alt='tst' className='absolute -z-10 -left-10 h-[30rem]' /> */}
         <img src='/mock.png' alt='tst' />
         <div className='text-left'>
           <div className='flex gap-2 items-center'>
