@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md font-mono">
       <div className="flex justify-between border-b lg:border-b-0 items-center px-6 py-4 md:px-20">
         {/* Logo */}
-        <img src="/art.jpg" alt="logo" className="h-14" />
+        <img src="/art.jpg" alt="logo" className="h-16" />
 
         {/* Mobile Menu Button */}
         <div className="md:hidden bg-white border-gray-200">
