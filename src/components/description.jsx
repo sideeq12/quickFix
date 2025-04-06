@@ -38,7 +38,7 @@ const Description = () => {
         <img src='/ph.png' alt='tst' />
       </MotionDiv>
       
-      <MotionDiv className='grid grid-cols-1 md:grid-cols-2 gap-10 w-5/6 items-center mx-auto'>
+      <MotionDiv className='flex flex-col-reverse mt-4 md:grid md:grid-cols-2 gap-10 w-5/6 items-center mx-auto'>
         <img src='/clip4.png' alt='tst' className='absolute -z-10 -left-10 h-[30rem]' />
         <img src='/mock.png' alt='tst' />
         <div className='text-left'>
@@ -68,7 +68,7 @@ const Description = () => {
         </div>
       </MotionDiv>
       
-      <MotionDiv className='grid grid-cols-1 md:grid-cols-2 mt-10 w-5/6 justify-between items-center mx-auto relative'>
+      <MotionDiv className='grid grid-cols-1  md:grid-cols-2 mt-4 md:mt-10 w-5/6 justify-between items-center mx-auto relative'>
         <div className='text-left'>
           <div className='flex gap-2 items-center'>
             <div className='h-10 w-10 rounded-full bg-red-400 flex items-center justify-center'>
@@ -81,7 +81,7 @@ const Description = () => {
           </div>
           <p className='mt-4'>Our mission is simple – to save lives by making the process of finding and donating blood seamless...</p>
         </div>
-        <img src='/heart.png' alt='tst' />
+        <img src='/heart.png' alt='tst' className='-mt-10 md:mt-0' />
       </MotionDiv>
     </div>
   );

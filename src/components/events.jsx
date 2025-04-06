@@ -14,7 +14,7 @@ const Events = () => {
                         bg-white"
                         key={index}
                     >
-                        <div className='w-5/6 lg:w-full lg:col-span-1 m-4   
+                        <div className=' hidden md:block w-5/6 lg:w-full lg:col-span-1 m-4   
                             bg-[url(/abut.svg)] bg-center bg-cover h-60' 
                         ></div>
                         <div className="rounded-lg col-span-1 p-4">
@@ -32,7 +32,7 @@ const Events = () => {
                                 <div className="text-black font-light
                                  text-xs whitespace-normal overflow-hidden">
                                     Lorem ipsum dolor sit amet consectetur. Neque a a diam consequat massa pulvinar.
-                                    Congue cursus nullam ornare libero convallis orci id consectetur.
+                                    Congue cursus nullam ornare  consectetur.
                                 </div>
                             </div>
                         </div>

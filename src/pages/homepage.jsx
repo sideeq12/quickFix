@@ -49,7 +49,7 @@ const Homepage = () => {
                 <h2 className='font-bold text-xl md:text-5xl'>6000+</h2>
                 <span>Customers</span>
             </div>
-            <img src="/vector.png" className='absolute -top-80 h-[30rem] -left-14 z-10' alt='' />
+            {/* <img src="/vector.png" className='absolute -top-80 h-[30rem] -left-14 z-10' alt='' /> */}
         </MotionDiv>
         <MotionDiv className='py-4 w-5/6 mx-auto grid grid-cols-1 md:grid-cols-2 text-left lg:space-x-10 align-middle'>
             <iframe
