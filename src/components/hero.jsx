@@ -45,17 +45,7 @@ const Hero = () => {
               </a>
             </motion.div>
           </div>
-          
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-            <motion.img 
-              src="/hero-image.png" 
-              alt="Blood donation illustration"
-              className="w-full max-w-md lg:max-w-lg"
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            />
-          </div>
+
         </div>
       </div>
       <img 

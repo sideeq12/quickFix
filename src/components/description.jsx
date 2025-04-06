@@ -42,21 +42,6 @@ const Description = () => {
         </div>
       </MotionDiv>
       
-<<<<<<< HEAD
-      <MotionDiv className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full sm:w-5/6 items-center mx-auto mt-16 sm:mt-20 relative">
-        <img 
-          src="/clip4.png" 
-          alt="decoration" 
-          className="absolute -z-10 -left-10 h-[20rem] sm:h-[25rem] lg:h-[30rem] opacity-50 sm:opacity-100" 
-        />
-        <div className="w-full flex justify-center md:justify-start order-2 md:order-1">
-          <img src="/mock.png" alt="Mobile app mockup" className="w-full max-w-md lg:max-w-lg" />
-        </div>
-        <div className="text-left space-y-8 order-1 md:order-2">
-          <div className="flex gap-3 items-center">
-            <div className="h-12 w-12 rounded-full bg-red-400 flex items-center justify-center">
-              <BsDroplet className="text-white" size={24} />
-=======
       <MotionDiv className='flex flex-col-reverse mt-4 md:grid md:grid-cols-2 gap-10 w-5/6 items-center mx-auto'>
         <img src='/clip4.png' alt='tst' className='absolute -z-10 -left-10 h-[30rem]' />
         <img src='/mock.png' alt='tst' />
@@ -64,7 +49,6 @@ const Description = () => {
           <div className='flex gap-2 items-center'>
             <div className='h-10 w-10 rounded-full bg-red-400 flex items-center justify-center'>
               <BsDroplet className='text-white' size={20} />
->>>>>>> 6366def23c8db650f14f19f896444dd68453c978
             </div>
             <div>
               <h2 className="font-semibold text-xl sm:text-2xl">Why Blood Hero?</h2>
@@ -88,19 +72,11 @@ const Description = () => {
         </div>
       </MotionDiv>
       
-<<<<<<< HEAD
-      <MotionDiv className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-16 sm:mt-20 w-full sm:w-5/6 justify-between items-center mx-auto relative">
-        <div className="text-left space-y-6">
-          <div className="flex gap-3 items-center">
-            <div className="h-12 w-12 rounded-full bg-red-400 flex items-center justify-center">
-              <BsEmojiSmile className="text-white" size={24} />
-=======
       <MotionDiv className='grid grid-cols-1  md:grid-cols-2 mt-4 md:mt-10 w-5/6 justify-between items-center mx-auto relative'>
         <div className='text-left'>
           <div className='flex gap-2 items-center'>
             <div className='h-10 w-10 rounded-full bg-red-400 flex items-center justify-center'>
               <BsEmojiSmile className='text-white' size={20} />
->>>>>>> 6366def23c8db650f14f19f896444dd68453c978
             </div>
             <div>
               <h2 className="font-semibold text-xl sm:text-2xl">Our mission</h2>
@@ -114,10 +90,7 @@ const Description = () => {
         <div className="w-full flex justify-center md:justify-end">
           <img src="/heart.png" alt="Heart illustration" className="w-full max-w-md lg:max-w-lg" />
         </div>
-<<<<<<< HEAD
-=======
         <img src='/heart.png' alt='tst' className='-mt-10 md:mt-0' />
->>>>>>> 6366def23c8db650f14f19f896444dd68453c978
       </MotionDiv>
     </div>
   );

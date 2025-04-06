@@ -17,10 +17,10 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav className="bg-white shadow-md font-mono fixed w-full top-0 z-50">
+    <nav className="bg-white shadow-sm font-mono  w-full top-0 z-50">
       <div className="flex justify-between items-center px-4 sm:px-6 lg:px-20 py-3">
         {/* Logo */}
-        <img src="/art.jpg" alt="logo" className="h-10 sm:h-14" />
+        <img src="/art.jpg" alt="logo" className="h-14" />
 
         {/* Mobile Menu Button */}
         <button 
