@@ -14,14 +14,14 @@ const Recents = () => {
                 
                 
                 <div className="bg-white rounded-b-lg mt-auto">
-    <div className="bg-red-500 -mt-4 py-1 px-4 text-sm font-light rounded-lg w-fit">
+    <div className="ml-2 bg-red-700 -mt-4 py-1 px-4 text-sm font-light rounded-md w-fit">
       December 12, 2024
     </div>
     <div className="text-black text-sm">
       <div className="my-2 px-2">
         How Young People Volunteering to dshisd dsshjds sddjhk...
       </div>
-      <div className="flex bg-yellow-700 text-black font-light text-xs rounded-b-lg">
+      <div className="flex bg-yellow-700 text-white font-light text-xs rounded-b-lg">
         <div className="border-r border-black py-1 px-2">By Admin</div>
         <div className="px-2 py-1">Fitness</div>
       </div>
